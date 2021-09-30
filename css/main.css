@@ -1,35 +1,3 @@
-.primary-nav {
-  background-color: #ffffff;
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  padding-left: 6rem;
-  padding-right: 6rem;
-}
-/* Travel Site Logo at top left side of landing page */
-.primary-nav__logo {
-  font-size: 1.1rem;
-  text-decoration: none;
-  color: #335576;
-  font-weight: bold;
-}
-
-.primary-nav-left {
-  display: inline-block;
-}
-.primary-nav-right__list {
-  list-style: none;
-  display: flex;
-}
-
-.primary-nav-right__anchor {
-  color: black;
-  text-decoration: none;
-  margin: 0.3125rem;
-  font-size: 1.1rem;
-  font-weight: 400;
-}
-
 .hero {
   background-color: #fefaf5;
   display: flex;
