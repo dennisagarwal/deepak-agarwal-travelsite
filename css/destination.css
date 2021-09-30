@@ -17,6 +17,9 @@
 .iceland {
   background-image: url("../assets/Images/iceland.jpg");
 }
+.current {
+  border-bottom: 0.125rem solid #335576;
+}
 
 .destination__heading {
   font-size: 2.8rem;

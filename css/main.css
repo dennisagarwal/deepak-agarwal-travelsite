@@ -29,6 +29,9 @@
   color: #ffffff;
   margin-top: 1.3125rem;
 }
+.current {
+  border-bottom: 0.125rem solid #335576;
+}
 
 .hero-right__img {
   padding-right: 6rem;
