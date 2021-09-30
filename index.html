@@ -15,10 +15,12 @@
           <a class="primary-nav__logo" href="">Travel Site</a>
         </div>
         <div class="primary-nav-right">
-          <li class="primary-nav-right__anchor"><a href="">Home</a></li>
-          <li class="primary-nav-right__anchor"><a href="">Hawaii</a></li>
-          <li class="primary-nav-right__anchor"><a href="">Iceland</a></li>
-          <li class="primary-nav-right__anchor"><a href="">Greece</a></li>
+          <ul class="primary-nav-right__list">
+            <li><a class="primary-nav-right__anchor" href="">Home</a></li>
+            <li><a class="primary-nav-right__anchor" href="">Hawaii</a></li>
+            <li><a class="primary-nav-right__anchor" href="">Iceland</a></li>
+            <li><a class="primary-nav-right__anchor" href="">Greece</a></li>
+          </ul>
         </div>
       </nav>
     </header>
@@ -38,8 +40,8 @@
           <a href="">Get Started</a>
         </div>
       </div>
-      <div class="hero-right__img">
-        <img src="./assets/Images/hero.png" alt="" />
+      <div>
+        <img class="hero-right__img" src="./assets/Images/hero.png" alt="" />
       </div>
     </section>
 
@@ -48,14 +50,29 @@
         <h2>Recommendations</h2>
       </div>
       <div class="recommendations__cards">
-        <div class="recommendations__card-img">
-          <img src="./assets/Images/greece.jpg" alt="" />
+        <div class="recommendations__card-img-text">
+          <img
+            class="recommendations__card-img"
+            src="./assets/Images/iceland.jpg"
+            alt=""
+          />
+          <p class="recommendations__card-text">Iceland</p>
         </div>
-        <div class="recommendations__card-img">
-          <img src="./assets/Images/hawaii.jpg" alt="" />
+        <div class="recommendations__card-img-text">
+          <img
+            class="recommendations__card-img"
+            src="./assets/Images/greece.jpg"
+            alt=""
+          />
+          <p class="recommendations__card-text">Greece</p>
         </div>
-        <div class="recommendations__card-image">
-          <img src="./assets/Images/iceland.jpg" alt="" />
+        <div class="recommendations__card-img-text">
+          <img
+            class="recommendations__card-img"
+            src="./assets/Images/hawaii.jpg"
+            alt=""
+          />
+          <p class="recommendations__card-text">Hawaii</p>
         </div>
       </div>
     </section>
@@ -65,7 +82,7 @@
         <div class="contact__heading">
           <h2>Contact</h2>
         </div>
-        <div class="contact__sub-heading">
+        <div class="contact-sub-heading">
           <h3>EMAIL</h3>
         </div>
         <div class="contact__text">
@@ -73,12 +90,13 @@
         </div>
       </div>
 
-      <div class="contact__card">
+      <div class="contact-hour__card">
         <div class="contact__heading">
           <h2>Hours</h2>
         </div>
-        <div class="contact__sub-card">
-          <div class="contact__heading">
+        <div class="contact-day__card">
+        <div class="contact-hour__sub-card">
+          <div class="contact-sub-heading">
             <h3>MONDAY - FRIDAY</h3>
           </div>
           <div class="contact__text">
@@ -86,8 +104,8 @@
           </div>
         </div>
 
-        <div class="contact__sub-card">
-          <div class="contact__heading">
+        <div class="contact-hour__sub-card">
+          <div class="contact-sub-heading">
             <h3>SATURDAY</h3>
           </div>
           <div class="contact__text">
@@ -95,12 +113,13 @@
           </div>
         </div>
 
-        <div class="contact__sub-card">
-          <div class="contact__heading">
+        <div class="contact-hour__sub-card">
+          <div class="contact-sub-heading">
             <h3>SUNDAY</h3>
           </div>
-          <div class="contact__text">
+          <div class="contact-hour__text">
             <p>Closed</p>
+          </div>
           </div>
         </div>
       </div>
@@ -108,16 +127,25 @@
       <div class="contact__card">
         <div class="contact__heading">
           <h2>Social</h2>
-        </div>
-        <div class="contact__icon">
-          <img src="./assets/Icons/icon-instagram.png" alt="" />
-        </div>
-        <div class="contact__icon">
-          <img src="./assets/Icons/icon-facebook.png" alt="" />
-        </div>
-        <div class="contact__icon">
-          <img src="./assets/Icons/icon-twitter.png" alt="" />
-        </div>
+
+          <img
+            class="contact__icon"
+            src="./assets/Images/icon-instagram.png"
+            alt=""
+          />
+
+          <img
+            class="contact__icon"
+            src="./assets/Images/icon-facebook.png"
+            alt=""
+          />
+
+          <img
+            class="contact__icon"
+            src="./assets/Images/icon-twitter.png"
+            alt=""
+          />
+
       </div>
     </footer>
   </body>
