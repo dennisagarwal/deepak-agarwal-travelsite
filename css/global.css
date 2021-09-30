@@ -85,3 +85,7 @@
   margin-right: 1.5rem;
   color: #335576;
 }
+
+.primary-nav-right__anchor a:active {
+  color: red;
+}

@@ -18,9 +18,16 @@
 }
 .hero-left__para {
   font-size: 0.95rem;
+  margin-bottom: 1.3125rem;
 }
 .hero-left__button {
+  width: 3rem;
   background-color: #db7a4e;
+  text-decoration: none;
+  border-radius: 1.625rem;
+  padding: 0.5rem 2.2rem;
+  color: #ffffff;
+  margin-top: 1.3125rem;
 }
 
 .hero-right__img {
@@ -44,14 +51,11 @@
   position: relative;
 }
 .recommendations__card-img {
-  /* position: relative; */
   border: 0.0625rem solid black;
   border-radius: 0.3125rem;
-  /* opacity: 20%; */
   width: 16rem;
   height: 24rem;
   margin-right: 2.625rem;
-  /* margin: 1.7rem; */
 }
 .recommendations__card-text {
   position: absolute;
