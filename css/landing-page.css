@@ -1,0 +1,40 @@
+.primary-nav {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.primary-nav__logo {
+  color: #335576;
+}
+
+.primary-nav-left {
+  display: inline-block;
+}
+
+.primary-nav-right__anchor {
+  display: inline-block;
+}
+
+.hero {
+  background-color: #fefaf5;
+  display: flex;
+  justify-content: space-around;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: #335576;
+}
+
+.recommendations {
+  color: #335576;
+}
+.recommendations__cards {
+  display: flex;
+}
+.recommendations__card-img {
+  position: relative;
+}
