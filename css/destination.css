@@ -10,6 +10,14 @@
   background-image: url("../assets/Images/hawaii.jpg");
 }
 
+.greece {
+  background-image: url("../assets/Images/greece.jpg");
+}
+
+.iceland {
+  background-image: url("../assets/Images/iceland.jpg");
+}
+
 .destination__heading {
   font-size: 2.8rem;
   padding-left: 6rem;
