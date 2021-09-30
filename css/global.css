@@ -32,13 +32,15 @@
   margin: 0.3125rem;
   font-size: 1.1rem;
   font-weight: 400;
+  padding-bottom: 0.2rem;
 }
 
 .contact {
   background-color: #fefaf5;
   display: flex;
   padding-left: 14rem;
-  /* justify-content: baseline; */
+  /* margin-left: -0.5%;
+  margin-right: -0.5%; */
 }
 
 .contact__heading {

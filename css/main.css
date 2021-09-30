@@ -1,6 +1,8 @@
 .hero {
   background-color: #fefaf5;
   display: flex;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 .hero-left {
@@ -29,8 +31,8 @@
   color: #ffffff;
   margin-top: 1.3125rem;
 }
-.current {
-  border-bottom: 0.125rem solid #335576;
+.primary-nav-right__anchor-current {
+  border-bottom: 0.22rem solid #db7a4e;
 }
 
 .hero-right__img {
@@ -40,10 +42,14 @@
 }
 
 .recommendations {
+  margin-top: 5%;
+  margin-bottom: 8%;
+  padding-left: 6rem;
+}
+.recommendations__heading {
   font-size: 0.95rem;
   color: #335576;
-  font-weight: bold;
-  padding-left: 6rem;
+  font-weight: bolder;
 }
 .recommendations__cards {
   display: flex;
@@ -54,11 +60,12 @@
   position: relative;
 }
 .recommendations__card-img {
-  border: 0.0625rem solid black;
+  border: 0.0625rem solid rgba(0, 0, 0, 0.2);
   border-radius: 0.3125rem;
   width: 16rem;
   height: 24rem;
   margin-right: 2.625rem;
+  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2);
 }
 .recommendations__card-text {
   position: absolute;
