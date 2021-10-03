@@ -12,7 +12,6 @@
   height: 40rem;
   background-position: center;
   background-size: cover;
-  display: flex;
   padding-top: 4%;
   padding-left: 6rem;
   @include column-display;
@@ -30,6 +29,16 @@
   &__heading {
     width: 40rem;
     font-size: 1.3rem;
+  }
+  &__image {
+    position: absolute;
+    display: block;
+    top: 1rem;
+    animation: move 20s infinite;
+    &-plane {
+      width: 8rem;
+      height: 8rem;
+    }
   }
   &__form {
     width: 40rem;
@@ -50,5 +59,15 @@
       display: flex;
       justify-content: space-between;
     }
+  }
+}
+@keyframes move {
+  from {
+    top: 1rem;
+    left: 0;
+  }
+  to {
+    top: 1rem;
+    left: 80rem;
   }
 }

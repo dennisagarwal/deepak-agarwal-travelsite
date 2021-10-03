@@ -425,7 +425,6 @@ template {
   height: 40rem;
   background-position: center;
   background-size: cover;
-  display: flex;
   padding-top: 4%;
   padding-left: 6rem;
   display: flex;
@@ -446,6 +445,17 @@ template {
   width: 40rem;
   font-size: 1.3rem;
 }
+.user__image {
+  position: absolute;
+  display: block;
+  top: 1rem;
+  -webkit-animation: move 20s infinite;
+          animation: move 20s infinite;
+}
+.user__image-plane {
+  width: 8rem;
+  height: 8rem;
+}
 .user__form {
   width: 40rem;
   font-size: 0.95rem;
@@ -465,4 +475,26 @@ template {
 .user__form--display {
   display: flex;
   justify-content: space-between;
+}
+
+@-webkit-keyframes move {
+  from {
+    top: 1rem;
+    left: 0;
+  }
+  to {
+    top: 1rem;
+    left: 80rem;
+  }
+}
+
+@keyframes move {
+  from {
+    top: 1rem;
+    left: 0;
+  }
+  to {
+    top: 1rem;
+    left: 80rem;
+  }
 }/*# sourceMappingURL=contact.css.map */
