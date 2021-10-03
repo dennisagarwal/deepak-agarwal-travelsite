@@ -1,0 +1,54 @@
+@use "./partials/normalize";
+@use "./partials/global";
+
+@mixin column-display {
+  display: flex;
+  flex-direction: column;
+}
+
+.user {
+  background-image: url("../assets/Images/contact.jpg");
+  width: 100%;
+  height: 40rem;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  padding-top: 4%;
+  padding-left: 6rem;
+  @include column-display;
+  color: #022242;
+  font-weight: bold;
+  &__button {
+    width: 3rem;
+    background-color: #db7a4e;
+    text-decoration: none;
+    border-radius: 1.625rem;
+    padding: 0.5rem 2.2rem;
+    color: #ffffff;
+    margin-top: 1.3125rem;
+  }
+  &__heading {
+    width: 40rem;
+    font-size: 1.3rem;
+  }
+  &__form {
+    width: 40rem;
+    font-size: 0.95rem;
+    margin-bottom: 1.3125rem;
+    &-label {
+      font-size: 1.3rem;
+      margin-right: 2rem;
+      margin-bottom: 1rem;
+    }
+    &-input {
+      width: 26rem;
+      font-size: 1.3rem;
+      margin-right: 2rem;
+      margin-bottom: 1rem;
+    }
+    &--display {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

@@ -362,8 +362,8 @@ template {
   font-weight: 400;
   padding-bottom: 0.2rem;
 }
-.primary-nav-right__list-anchor-current {
-  border-bottom: 0.22rem solid #db7a4e;
+.primary-nav-right__list-anchor:hover {
+  border-bottom: 0.22rem solid #335576;
 }
 .primary-nav-left {
   display: inline-block;
@@ -427,6 +427,11 @@ template {
   display: flex;
   flex-direction: column;
 }
+.destination-cards {
+  display: flex;
+  flex-direction: row;
+  padding-left: 14rem;
+}
 .destination__heading {
   font-size: 2.8rem;
   padding-left: 6rem;
@@ -453,12 +458,6 @@ template {
   margin: 0.2rem 0;
   background-color: #fefaf5;
   text-align: center;
-}
-
-.cards {
-  display: flex;
-  flex-direction: row;
-  padding-left: 14rem;
 }
 
 .hawaii {

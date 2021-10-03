@@ -1,13 +1,22 @@
 @use "./partials/normalize";
 @use "./partials/global";
 
+@mixin column-display {
+  display: flex;
+  flex-direction: column;
+}
+
 .destination {
   width: 100%;
   height: 40rem;
   background-position: center;
   background-size: cover;
-  display: flex;
-  flex-direction: column;
+  @include column-display;
+  &-cards {
+    display: flex;
+    flex-direction: row;
+    padding-left: 14rem;
+  }
   &__heading {
     font-size: 2.8rem;
     padding-left: 6rem;
@@ -16,8 +25,7 @@
   &__card {
     width: 15.5rem;
     height: 22rem;
-    display: flex;
-    flex-direction: column;
+    @include column-display;
     align-items: center;
     background-color: #ffffff;
     margin-right: 1.5rem;
@@ -37,11 +45,6 @@
   }
 }
 
-.cards {
-  display: flex;
-  flex-direction: row;
-  padding-left: 14rem;
-}
 .hawaii {
   background-image: url("../assets/Images/hawaii.jpg");
 }

@@ -1,6 +1,11 @@
 @use "./partials/normalize";
 @use "./partials/global";
 
+@mixin column-display {
+  display: flex;
+  flex-direction: column;
+}
+
 .hero {
   background-color: #fefaf5;
   display: flex;
@@ -11,8 +16,7 @@
     width: 36rem;
     height: 25rem;
     padding-left: 6rem;
-    display: flex;
-    flex-direction: column;
+    @include column-display;
     color: #335576;
     &__button {
       width: 3rem;
@@ -31,7 +35,6 @@
       margin-bottom: 1.3125rem;
     }
   }
-
   &-right__img {
     padding-right: 6rem;
     width: 30rem;
@@ -70,5 +73,11 @@
         position: relative;
       }
     }
+    &-img:hover {
+      border: 0.4rem solid rgb(146, 142, 142);
+    }
   }
+}
+.primary-nav-right__anchor-current {
+  border-bottom: 0.22rem solid #db7a4e;
 }

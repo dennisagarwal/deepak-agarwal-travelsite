@@ -20,9 +20,9 @@
         font-size: 1.1rem;
         font-weight: 400;
         padding-bottom: 0.2rem;
-        &-current {
-          border-bottom: 0.22rem solid #db7a4e;
-        }
+      }
+      &-anchor:hover {
+        border-bottom: 0.22rem solid #335576;
       }
     }
   }
