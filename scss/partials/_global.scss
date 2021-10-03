@@ -1,0 +1,84 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.primary-nav {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  &-right {
+    &__list {
+      list-style: none;
+      display: flex;
+      &-anchor {
+        color: black;
+        text-decoration: none;
+        margin: 0.3125rem;
+        font-size: 1.1rem;
+        font-weight: 400;
+        padding-bottom: 0.2rem;
+        &-current {
+          border-bottom: 0.22rem solid #db7a4e;
+        }
+      }
+    }
+  }
+  &-left {
+    display: inline-block;
+    &__logo {
+      font-size: 1.1rem;
+      text-decoration: none;
+      color: #335576;
+      font-weight: bold;
+    }
+  }
+}
+
+.contact {
+  background-color: #fefaf5;
+  display: flex;
+  padding-left: 14rem;
+  &__heading {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #335576;
+    font-weight: bold;
+  }
+  &__card {
+    width: 17rem;
+    display: flex;
+    flex-direction: column;
+  }
+  &__icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: inline-block;
+    margin-right: 1.5rem;
+    color: #335576;
+  }
+  &-sub-heading {
+    font-size: 0.45rem;
+    color: #db7a4e;
+  }
+  &-day__card {
+    display: flex;
+    flex-direction: row;
+  }
+  &-hour {
+    &__card {
+      display: flex;
+      flex-direction: column;
+    }
+    &__sub-card {
+      display: flex;
+      width: 11rem;
+      flex-direction: column;
+    }
+    &__text {
+      font-size: 0.95rem;
+    }
+  }
+}

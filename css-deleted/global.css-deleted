@@ -39,8 +39,6 @@
   background-color: #fefaf5;
   display: flex;
   padding-left: 14rem;
-  /* margin-left: -0.5%;
-  margin-right: -0.5%; */
 }
 
 .contact__heading {
@@ -56,12 +54,10 @@
 }
 .contact-hour__card {
   display: flex;
-  /* width: 51rem; */
   flex-direction: column;
 }
 .contact-day__card {
   display: flex;
-  /* width: 51rem; */
   flex-direction: row;
 }
 .contact-hour__sub-card {
@@ -73,10 +69,7 @@
   font-size: 0.45rem;
   color: #db7a4e;
 }
-/* .contact__sub-card {
-  display: flex;
-  flex-direction: row;
-} */
+
 .contact-hour__text {
   font-size: 0.95rem;
 }

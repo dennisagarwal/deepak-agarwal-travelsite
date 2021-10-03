@@ -27,7 +27,7 @@
   color: #ffffff;
 }
 
-.card {
+.cards {
   display: flex;
   flex-direction: row;
   padding-left: 14rem;
