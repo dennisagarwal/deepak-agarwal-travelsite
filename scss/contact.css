@@ -544,7 +544,7 @@ template {
   height: 8rem;
 }
 .user__form {
-  width: 40rem;
+  width: 35rem;
   font-size: 0.95rem;
   margin-bottom: 1.3125rem;
   position: relative;
@@ -570,6 +570,7 @@ template {
 
 @media only screen and (max-width: 1000px) {
   .user {
+    width: 100%;
     height: 100%;
     padding-bottom: 4%;
     padding-left: 0;

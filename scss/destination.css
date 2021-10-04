@@ -567,8 +567,6 @@ template {
     padding-bottom: 5%;
   }
   .destination-cards {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
@@ -579,15 +577,9 @@ template {
     margin: auto;
   }
   .destination__card {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
     margin: 5% auto;
-  }
-  .destination__card-text-box {
-    width: 13rem;
-    height: 3rem;
   }
 }/*# sourceMappingURL=destination.css.map */

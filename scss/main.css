@@ -584,8 +584,6 @@ template {
 
 @media only screen and (max-width: 1000px) {
   .hero {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
@@ -607,15 +605,11 @@ template {
 
   .recommendations {
     padding-left: 0;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
   }
   .recommendations__cards {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
