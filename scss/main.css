@@ -419,6 +419,91 @@ template {
   font-size: 0.95rem;
 }
 
+@media only screen and (max-width: 1000px) {
+  .primary-nav {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: column;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  .primary-nav-right__list {
+    padding-left: 0;
+    list-style: none;
+  }
+  .primary-nav-right__list-anchor {
+    color: black;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
+  .primary-nav-right__list-anchor:hover {
+    border-bottom: 0.22rem solid #335576;
+  }
+  .primary-nav-left {
+    margin-left: 0;
+    text-align: center;
+    justify-content: center;
+  }
+  .primary-nav-left__logo {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #335576;
+    font-weight: bold;
+  }
+
+  .contact {
+    background-color: #fefaf5;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    text-align: left;
+  }
+  .contact__heading {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #335576;
+    font-weight: bold;
+    text-align: center;
+  }
+  .contact__card {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact__icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 1rem;
+    color: #335576;
+    margin: 1rem auto;
+  }
+  .contact-sub-heading {
+    font-size: 0.45rem;
+    color: #db7a4e;
+  }
+  .contact-day__card {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-hour__card {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-hour__sub-card {
+    display: flex;
+    width: 11rem;
+    flex-direction: column;
+  }
+  .contact-hour__text {
+    font-size: 0.95rem;
+  }
+}
 .hero {
   background-color: #fefaf5;
   display: flex;
@@ -495,4 +580,89 @@ template {
 
 .primary-nav-right__anchor-current {
   border-bottom: 0.22rem solid #db7a4e;
+}
+
+@media only screen and (max-width: 1000px) {
+  .hero {
+    background-color: #fefaf5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  .hero-left {
+    margin: 0 auto;
+    padding-left: 0;
+    width: 20rem;
+    height: 26rem;
+    display: flex;
+    color: #335576;
+  }
+  .hero-left__button {
+    width: 3rem;
+    background-color: #db7a4e;
+    text-decoration: none;
+    border-radius: 1.625rem;
+    color: #ffffff;
+    margin-top: 1.3125rem;
+  }
+  .hero-left__heading {
+    font-size: 1.3rem;
+  }
+  .hero-left__para {
+    font-size: 0.95rem;
+    margin-bottom: 1.3125rem;
+  }
+  .hero-right__img {
+    padding-right: 0;
+    height: 26rem;
+  }
+
+  .recommendations {
+    margin-top: 5%;
+    margin-bottom: 8%;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  .recommendations__heading {
+    font-size: 0.95rem;
+    color: #335576;
+    font-weight: bolder;
+  }
+  .recommendations__cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  .recommendations__cards-text {
+    position: absolute;
+    font-size: 1.25rem;
+    right: 3.75rem;
+    bottom: 0.3125rem;
+    color: #ffffff;
+  }
+  .recommendations__cards-img {
+    border: 0.0625rem solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.3125rem;
+    width: 16rem;
+    height: 24rem;
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2);
+  }
+  .recommendations__cards-img-text {
+    position: relative;
+  }
+  .recommendations__cards-img:hover {
+    border: 0.4rem solid #928e8e;
+  }
+
+  .primary-nav-right__anchor-current {
+    border-bottom: 0.22rem solid #db7a4e;
+  }
 }/*# sourceMappingURL=main.css.map */

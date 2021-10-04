@@ -419,6 +419,91 @@ template {
   font-size: 0.95rem;
 }
 
+@media only screen and (max-width: 1000px) {
+  .primary-nav {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: column;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  .primary-nav-right__list {
+    padding-left: 0;
+    list-style: none;
+  }
+  .primary-nav-right__list-anchor {
+    color: black;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
+  .primary-nav-right__list-anchor:hover {
+    border-bottom: 0.22rem solid #335576;
+  }
+  .primary-nav-left {
+    margin-left: 0;
+    text-align: center;
+    justify-content: center;
+  }
+  .primary-nav-left__logo {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #335576;
+    font-weight: bold;
+  }
+
+  .contact {
+    background-color: #fefaf5;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    text-align: left;
+  }
+  .contact__heading {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #335576;
+    font-weight: bold;
+    text-align: center;
+  }
+  .contact__card {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact__icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 1rem;
+    color: #335576;
+    margin: 1rem auto;
+  }
+  .contact-sub-heading {
+    font-size: 0.45rem;
+    color: #db7a4e;
+  }
+  .contact-day__card {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-hour__card {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-hour__sub-card {
+    display: flex;
+    width: 11rem;
+    flex-direction: column;
+  }
+  .contact-hour__text {
+    font-size: 0.95rem;
+  }
+}
 .user {
   background-image: url("../assets/Images/contact.jpg");
   width: 100%;
@@ -449,8 +534,8 @@ template {
   position: absolute;
   display: block;
   top: 1rem;
-  -webkit-animation: move 20s infinite;
-          animation: move 20s infinite;
+  -webkit-animation: move 13s infinite, scale 13s infinite;
+          animation: move 13s infinite, scale 13s infinite;
 }
 .user__image-plane {
   width: 8rem;
@@ -483,7 +568,7 @@ template {
     left: 0;
   }
   to {
-    top: 1rem;
+    top: 30rem;
     left: 80rem;
   }
 }
@@ -494,7 +579,23 @@ template {
     left: 0;
   }
   to {
-    top: 1rem;
+    top: 30rem;
     left: 80rem;
+  }
+}
+@-webkit-keyframes scale {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.1);
+  }
+}
+@keyframes scale {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.1);
   }
 }/*# sourceMappingURL=contact.css.map */

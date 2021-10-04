@@ -419,6 +419,91 @@ template {
   font-size: 0.95rem;
 }
 
+@media only screen and (max-width: 1000px) {
+  .primary-nav {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: column;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  .primary-nav-right__list {
+    padding-left: 0;
+    list-style: none;
+  }
+  .primary-nav-right__list-anchor {
+    color: black;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
+  .primary-nav-right__list-anchor:hover {
+    border-bottom: 0.22rem solid #335576;
+  }
+  .primary-nav-left {
+    margin-left: 0;
+    text-align: center;
+    justify-content: center;
+  }
+  .primary-nav-left__logo {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #335576;
+    font-weight: bold;
+  }
+
+  .contact {
+    background-color: #fefaf5;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    text-align: left;
+  }
+  .contact__heading {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #335576;
+    font-weight: bold;
+    text-align: center;
+  }
+  .contact__card {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact__icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 1rem;
+    color: #335576;
+    margin: 1rem auto;
+  }
+  .contact-sub-heading {
+    font-size: 0.45rem;
+    color: #db7a4e;
+  }
+  .contact-day__card {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-hour__card {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-hour__sub-card {
+    display: flex;
+    width: 11rem;
+    flex-direction: column;
+  }
+  .contact-hour__text {
+    font-size: 0.95rem;
+  }
+}
 .destination {
   width: 100%;
   height: 40rem;
@@ -474,4 +559,49 @@ template {
 
 .primary-nav-right__anchor-current {
   border-bottom: 0.22rem solid #db7a4e;
+}
+
+@media only screen and (max-width: 1000px) {
+  .destination {
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    padding-bottom: 5%;
+  }
+  .destination-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+    padding-left: 0;
+  }
+  .destination__heading {
+    font-size: 2.8rem;
+    padding-left: 0;
+    margin: auto;
+    color: #ffffff;
+  }
+  .destination__card {
+    width: 15.5rem;
+    height: 19rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    margin: 5% auto;
+    border-radius: 0.3125rem;
+  }
+  .destination__card-heading {
+    font-size: 1.2rem;
+    border-bottom: 0.0625rem solid black;
+  }
+  .destination__card-text-box {
+    width: 13rem;
+    height: 3rem;
+    background-color: #fefaf5;
+    text-align: center;
+  }
 }/*# sourceMappingURL=destination.css.map */
