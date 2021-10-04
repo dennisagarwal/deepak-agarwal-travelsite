@@ -37,13 +37,14 @@
   &__heading {
     width: 40rem;
     font-size: 1.3rem;
+    z-index: 10;
   }
   &__image {
     position: absolute;
     display: block;
     top: 1rem;
     animation: move 13s infinite, scale 13s infinite;
-
+    z-index: 1;
     &-plane {
       width: 8rem;
       height: 8rem;
@@ -53,10 +54,14 @@
     width: 40rem;
     font-size: 0.95rem;
     margin-bottom: 1.3125rem;
+    position: relative;
+    z-index: 10;
     &-label {
       font-size: 1.3rem;
       margin-right: 2rem;
       margin-bottom: 1rem;
+      position: relative;
+      z-index: 10;
     }
     &-input {
       width: 26rem;
@@ -70,6 +75,39 @@
     }
   }
 }
+
+@media only screen and (max-width: 1000px) {
+  .user {
+    height: 100%;
+    padding-bottom: 4%;
+    padding-left: 0;
+    @include responsive-display;
+    text-align: center;
+    &__button {
+      margin: 0 auto;
+    }
+    &__heading {
+      margin: 0 auto;
+    }
+    &__form {
+      font-size: 0.95rem;
+      margin-bottom: 1.3125rem;
+      &-label {
+        text-align: left;
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+      }
+      &-input {
+        margin: 0 auto;
+        margin-bottom: 1rem;
+      }
+      &--display {
+        @include responsive-display;
+      }
+    }
+  }
+}
+
 @keyframes move {
   from {
     top: 1rem;
@@ -86,63 +124,5 @@
   }
   to {
     transform: scale(0.1);
-  }
-}
-
-@media only screen and (max-width: 1000px) {
-  .user {
-    background-image: url("../assets/Images/contact.jpg");
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-    padding-bottom: 4%;
-    padding-left: 0;
-    @include responsive-display;
-    color: #022242;
-    font-weight: bold;
-    text-align: center;
-    &__button {
-      margin: 0 auto;
-      width: 3rem;
-      background-color: #db7a4e;
-      text-decoration: none;
-      border-radius: 1.625rem;
-      color: #ffffff;
-    }
-    &__heading {
-      text-align: center;
-      margin: 0 auto;
-      font-size: 1.3rem;
-    }
-    &__image {
-      position: absolute;
-      display: block;
-      top: 1rem;
-      animation: move 13s infinite, scale 13s infinite;
-
-      &-plane {
-        width: 8rem;
-        height: 8rem;
-      }
-    }
-    &__form {
-      font-size: 0.95rem;
-      margin-bottom: 1.3125rem;
-      &-label {
-        text-align: left;
-        color: #022242;
-        font-size: 1.3rem;
-        margin-bottom: 1rem;
-      }
-      &-input {
-        margin: 0 auto;
-        font-size: 1.3rem;
-        margin-bottom: 1rem;
-      }
-      &--display {
-        @include responsive-display;
-      }
-    }
   }
 }

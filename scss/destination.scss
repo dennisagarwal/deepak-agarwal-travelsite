@@ -1,5 +1,5 @@
-@use "./partials/normalize";
-@use "./partials/global";
+@use "./partials/normalize" as *;
+@use "./partials/global" as *;
 
 @mixin column-display {
   display: flex;
@@ -69,8 +69,8 @@
 
 @media only screen and (max-width: 1000px) {
   .destination {
-    background-position: center;
-    background-size: cover;
+    // background-position: center;
+    // background-size: cover;
     height: 100%;
     padding-bottom: 5%;
     &-cards {
@@ -78,27 +78,27 @@
       padding-left: 0;
     }
     &__heading {
-      font-size: 2.8rem;
+      // font-size: 2.8rem;
       padding-left: 0;
       margin: auto;
-      color: #ffffff;
+      // color: #ffffff;
     }
     &__card {
-      width: 15.5rem;
-      height: 19rem;
+      // width: 15.5rem;
+      // height: 22rem;
       @include responsive-display;
-      background-color: #ffffff;
+      // background-color: #ffffff;
       margin: 5% auto;
-      border-radius: 0.3125rem;
+      // border-radius: 0.3125rem;
       &-heading {
-        font-size: 1.2rem;
-        border-bottom: 0.0625rem solid black;
+        // font-size: 1.2rem;
+        // border-bottom: 0.0625rem solid black;
       }
       &-text-box {
         width: 13rem;
         height: 3rem;
-        background-color: #fefaf5;
-        text-align: center;
+        // background-color: #fefaf5;
+        // text-align: center;
       }
     }
   }

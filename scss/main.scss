@@ -90,7 +90,6 @@
 
 @media only screen and (max-width: 1000px) {
   .hero {
-    background-color: #fefaf5;
     @include responsive-display;
     &-left {
       margin: 0 auto;
@@ -98,21 +97,8 @@
       width: 20rem;
       height: 26rem;
       display: flex;
-      color: #335576;
       &__button {
-        width: 3rem;
-        background-color: #db7a4e;
-        text-decoration: none;
-        border-radius: 1.625rem;
-        color: #ffffff;
         margin-top: 1.3125rem;
-      }
-      &__heading {
-        font-size: 1.3rem;
-      }
-      &__para {
-        font-size: 0.95rem;
-        margin-bottom: 1.3125rem;
       }
     }
     &-right__img {
@@ -122,41 +108,13 @@
   }
 
   .recommendations {
-    margin-top: 5%;
-    margin-bottom: 8%;
     padding-left: 0;
     @include responsive-display;
-    &__heading {
-      font-size: 0.95rem;
-      color: #335576;
-      font-weight: bolder;
-    }
     &__cards {
       @include responsive-display;
-      &-text {
-        position: absolute;
-        font-size: 1.25rem;
-        right: 3.75rem;
-        bottom: 0.3125rem;
-        color: #ffffff;
-      }
       &-img {
-        border: 0.0625rem solid rgba(0, 0, 0, 0.2);
-        border-radius: 0.3125rem;
-        width: 16rem;
-        height: 24rem;
-        box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2);
         margin-bottom: 5%;
-        &-text {
-          position: relative;
-        }
-      }
-      &-img:hover {
-        border: 0.4rem solid rgb(146, 142, 142);
       }
     }
-  }
-  .primary-nav-right__anchor-current {
-    border-bottom: 0.22rem solid #db7a4e;
   }
 }
