@@ -5,7 +5,13 @@
   display: flex;
   flex-direction: column;
 }
-
+@mixin responsive-display {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
 .hero {
   background-color: #fefaf5;
   display: flex;
@@ -85,20 +91,12 @@
 @media only screen and (max-width: 1000px) {
   .hero {
     background-color: #fefaf5;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-    // justify-content: center;
-    // padding-top: 5%;
-    // padding-bottom: 5%;
+    @include responsive-display;
     &-left {
       margin: 0 auto;
       padding-left: 0;
       width: 20rem;
       height: 26rem;
-      // padding-left: 6rem;
       display: flex;
       color: #335576;
       &__button {
@@ -106,7 +104,6 @@
         background-color: #db7a4e;
         text-decoration: none;
         border-radius: 1.625rem;
-        // padding: 0.5rem 2.2rem;
         color: #ffffff;
         margin-top: 1.3125rem;
       }
@@ -119,12 +116,8 @@
       }
     }
     &-right__img {
-      // padding-right: 6rem;
-      // width: 20rem;
       padding-right: 0;
       height: 26rem;
-      // align-content: center;
-      // justify-content: center;
     }
   }
 
@@ -132,24 +125,14 @@
     margin-top: 5%;
     margin-bottom: 8%;
     padding-left: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-    // padding-left: 6rem;
+    @include responsive-display;
     &__heading {
       font-size: 0.95rem;
       color: #335576;
       font-weight: bolder;
     }
     &__cards {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-content: center;
-      flex-wrap: wrap;
-      // margin: 0;
+      @include responsive-display;
       &-text {
         position: absolute;
         font-size: 1.25rem;
@@ -162,8 +145,8 @@
         border-radius: 0.3125rem;
         width: 16rem;
         height: 24rem;
-        // margin-right: 2.625rem;
         box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2);
+        margin-bottom: 5%;
         &-text {
           position: relative;
         }
