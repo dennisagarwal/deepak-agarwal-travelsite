@@ -69,7 +69,6 @@
       margin-right: 2rem;
       margin-bottom: 1rem;
       position: relative;
-      z-index: 10;
       @include responsive {
         text-align: left;
         font-size: 1.3rem;
@@ -81,6 +80,7 @@
       font-size: 1.3rem;
       margin-right: 2rem;
       margin-bottom: 1rem;
+      outline-color: black;
       @include responsive {
         margin: 0 auto;
         margin-bottom: 1rem;

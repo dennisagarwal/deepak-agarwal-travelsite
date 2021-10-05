@@ -590,7 +590,6 @@ template {
   margin-right: 2rem;
   margin-bottom: 1rem;
   position: relative;
-  z-index: 10;
 }
 @media screen and (max-width: 1000px) {
   .user__form-label {
@@ -604,6 +603,7 @@ template {
   font-size: 1.3rem;
   margin-right: 2rem;
   margin-bottom: 1rem;
+  outline-color: black;
 }
 @media screen and (max-width: 1000px) {
   .user__form-input {
