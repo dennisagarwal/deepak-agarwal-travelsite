@@ -1,13 +1,22 @@
 @use "./partials/normalize" as *;
 @use "./partials/global" as *;
+@use "./partials/variables" as *;
+@use "./partials/mixins" as *;
+
+$responsive-breakpoint: 1000px;
+
+@mixin responsive {
+  @media screen and (max-width: $responsive-breakpoint) {
+    @content;
+  }
+}
 
 @mixin column-display {
   display: flex;
   flex-direction: column;
 }
-@mixin responsive-display {
-  // display: flex;
-  // flex-direction: column;
+
+@mixin wrap-display {
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
@@ -19,10 +28,18 @@
   background-position: center;
   background-size: cover;
   @include column-display;
+  @include responsive {
+    height: 100%;
+    padding-bottom: 5%;
+  }
   &-cards {
     display: flex;
     flex-direction: row;
     padding-left: 14rem;
+    @include responsive {
+      @include wrap-display;
+      padding-left: 0;
+    }
   }
   &__heading {
     font-size: 2.8rem;
@@ -37,10 +54,18 @@
     background-color: #ffffff;
     margin-right: 1.5rem;
     border-radius: 0.3125rem;
+    @include responsive {
+      @include wrap-display;
+      margin: 5% auto;
+    }
     &-heading {
       font-size: 1.2rem;
       padding: 0 4rem;
       border-bottom: 0.0625rem solid black;
+      @include responsive {
+        padding-left: 0;
+        margin: auto;
+      }
     }
     &-text-box {
       width: 13rem;
@@ -65,23 +90,4 @@
 }
 .primary-nav-right__anchor-current {
   border-bottom: 0.22rem solid #db7a4e;
-}
-
-@media only screen and (max-width: 1000px) {
-  .destination {
-    height: 100%;
-    padding-bottom: 5%;
-    &-cards {
-      @include responsive-display;
-      padding-left: 0;
-    }
-    &__heading {
-      padding-left: 0;
-      margin: auto;
-    }
-    &__card {
-      @include responsive-display;
-      margin: 5% auto;
-    }
-  }
 }

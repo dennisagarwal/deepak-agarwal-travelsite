@@ -1,18 +1,7 @@
-@use "./partials/normalize";
-@use "./partials/global";
-
-@mixin column-display {
-  display: flex;
-  flex-direction: column;
-}
-
-@mixin responsive-display {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  flex-wrap: wrap;
-}
+@use "./partials/normalize" as *;
+@use "./partials/global" as *;
+@use "./partials/variables" as *;
+@use "./partials/mixins" as *;
 
 .user {
   background-image: url("../assets/Images/contact.jpg");
@@ -25,6 +14,14 @@
   @include column-display;
   color: #022242;
   font-weight: bold;
+  @include responsive {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 4%;
+    padding-left: 0;
+    @include contact-flex-display;
+    text-align: center;
+  }
   &__button {
     width: 3rem;
     background-color: #db7a4e;
@@ -33,11 +30,17 @@
     padding: 0.5rem 2.2rem;
     color: #ffffff;
     margin-top: 1.3125rem;
+    @include responsive {
+      margin: 0 auto;
+    }
   }
   &__heading {
     width: 40rem;
     font-size: 1.3rem;
     z-index: 10;
+    @include responsive {
+      margin: 0 auto;
+    }
   }
   &__image {
     position: absolute;
@@ -51,59 +54,44 @@
     }
   }
   &__form {
-    width: 35rem;
+    width: 40rem;
     font-size: 0.95rem;
     margin-bottom: 1.3125rem;
     position: relative;
     z-index: 10;
+    @include responsive {
+      @include contact-flex-display;
+      font-size: 0.95rem;
+      margin-bottom: 1.3125rem;
+    }
     &-label {
       font-size: 1.3rem;
       margin-right: 2rem;
       margin-bottom: 1rem;
       position: relative;
       z-index: 10;
-    }
-    &-input {
-      width: 26rem;
-      font-size: 1.3rem;
-      margin-right: 2rem;
-      margin-bottom: 1rem;
-    }
-    &--display {
-      display: flex;
-      justify-content: space-between;
-    }
-  }
-}
-
-@media only screen and (max-width: 1000px) {
-  .user {
-    width: 100%;
-    height: 100%;
-    padding-bottom: 4%;
-    padding-left: 0;
-    @include responsive-display;
-    text-align: center;
-    &__button {
-      margin: 0 auto;
-    }
-    &__heading {
-      margin: 0 auto;
-    }
-    &__form {
-      font-size: 0.95rem;
-      margin-bottom: 1.3125rem;
-      &-label {
+      @include responsive {
         text-align: left;
         font-size: 1.3rem;
         margin-bottom: 1rem;
       }
-      &-input {
+    }
+    &-input {
+      width: 20rem;
+      font-size: 1.3rem;
+      margin-right: 2rem;
+      margin-bottom: 1rem;
+      @include responsive {
         margin: 0 auto;
         margin-bottom: 1rem;
       }
-      &--display {
-        @include responsive-display;
+    }
+    &--display {
+      display: flex;
+      justify-content: space-between;
+      @include responsive {
+        display: flex;
+        flex-direction: column;
       }
     }
   }

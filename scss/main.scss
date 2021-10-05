@@ -1,22 +1,16 @@
-@use "./partials/normalize";
-@use "./partials/global";
+@use "./partials/normalize" as *;
+@use "./partials/global" as *;
+@use "./partials/variables" as *;
+@use "./partials/mixins" as *;
 
-@mixin column-display {
-  display: flex;
-  flex-direction: column;
-}
-@mixin responsive-display {
-  // display: flex;
-  // flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  flex-wrap: wrap;
-}
 .hero {
   background-color: #fefaf5;
   display: flex;
   padding-top: 5%;
   padding-bottom: 5%;
+  @include responsive {
+    @include wrap-display;
+  }
   &-left {
     margin: 0;
     width: 36rem;
@@ -24,6 +18,13 @@
     padding-left: 6rem;
     @include column-display;
     color: #335576;
+    @include responsive {
+      margin: 0 auto;
+      padding-left: 0;
+      width: 20rem;
+      height: 26rem;
+      display: flex;
+    }
     &__button {
       width: 3rem;
       background-color: #db7a4e;
@@ -45,6 +46,10 @@
     padding-right: 6rem;
     width: 30rem;
     height: 25rem;
+    @include responsive {
+      padding-right: 0;
+      height: 26rem;
+    }
   }
 }
 
@@ -52,6 +57,9 @@
   margin-top: 5%;
   margin-bottom: 8%;
   padding-left: 6rem;
+  @include responsive {
+    @include wrap-display;
+  }
   &__heading {
     font-size: 0.95rem;
     color: #335576;
@@ -61,6 +69,9 @@
     display: flex;
     justify-content: center;
     margin: 0;
+    @include responsive {
+      @include wrap-display;
+    }
     &-text {
       position: absolute;
       font-size: 1.25rem;
@@ -75,6 +86,9 @@
       height: 24rem;
       margin-right: 2.625rem;
       box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2);
+      @include responsive {
+        margin-bottom: 5%;
+      }
       &-text {
         position: relative;
       }
@@ -86,35 +100,4 @@
 }
 .primary-nav-right__anchor-current {
   border-bottom: 0.22rem solid #db7a4e;
-}
-
-@media only screen and (max-width: 1000px) {
-  .hero {
-    @include responsive-display;
-    &-left {
-      margin: 0 auto;
-      padding-left: 0;
-      width: 20rem;
-      height: 26rem;
-      display: flex;
-      &__button {
-        margin-top: 1.3125rem;
-      }
-    }
-    &-right__img {
-      padding-right: 0;
-      height: 26rem;
-    }
-  }
-
-  .recommendations {
-    padding-left: 0;
-    @include responsive-display;
-    &__cards {
-      @include responsive-display;
-      &-img {
-        margin-bottom: 5%;
-      }
-    }
-  }
 }

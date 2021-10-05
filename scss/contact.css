@@ -517,6 +517,20 @@ template {
   color: #022242;
   font-weight: bold;
 }
+@media screen and (max-width: 1000px) {
+  .user {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 4%;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+}
 .user__button {
   width: 3rem;
   background-color: #db7a4e;
@@ -526,10 +540,20 @@ template {
   color: #ffffff;
   margin-top: 1.3125rem;
 }
+@media screen and (max-width: 1000px) {
+  .user__button {
+    margin: 0 auto;
+  }
+}
 .user__heading {
   width: 40rem;
   font-size: 1.3rem;
   z-index: 10;
+}
+@media screen and (max-width: 1000px) {
+  .user__heading {
+    margin: 0 auto;
+  }
 }
 .user__image {
   position: absolute;
@@ -544,11 +568,22 @@ template {
   height: 8rem;
 }
 .user__form {
-  width: 35rem;
+  width: 40rem;
   font-size: 0.95rem;
   margin-bottom: 1.3125rem;
   position: relative;
   z-index: 10;
+}
+@media screen and (max-width: 1000px) {
+  .user__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    font-size: 0.95rem;
+    margin-bottom: 1.3125rem;
+  }
 }
 .user__form-label {
   font-size: 1.3rem;
@@ -557,57 +592,36 @@ template {
   position: relative;
   z-index: 10;
 }
-.user__form-input {
-  width: 26rem;
-  font-size: 1.3rem;
-  margin-right: 2rem;
-  margin-bottom: 1rem;
-}
-.user__form--display {
-  display: flex;
-  justify-content: space-between;
-}
-
-@media only screen and (max-width: 1000px) {
-  .user {
-    width: 100%;
-    height: 100%;
-    padding-bottom: 4%;
-    padding-left: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-    text-align: center;
-  }
-  .user__button {
-    margin: 0 auto;
-  }
-  .user__heading {
-    margin: 0 auto;
-  }
-  .user__form {
-    font-size: 0.95rem;
-    margin-bottom: 1.3125rem;
-  }
+@media screen and (max-width: 1000px) {
   .user__form-label {
     text-align: left;
     font-size: 1.3rem;
     margin-bottom: 1rem;
   }
+}
+.user__form-input {
+  width: 20rem;
+  font-size: 1.3rem;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+}
+@media screen and (max-width: 1000px) {
   .user__form-input {
     margin: 0 auto;
     margin-bottom: 1rem;
   }
+}
+.user__form--display {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1000px) {
   .user__form--display {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
   }
 }
+
 @-webkit-keyframes move {
   from {
     top: 1rem;
@@ -618,6 +632,7 @@ template {
     left: 80rem;
   }
 }
+
 @keyframes move {
   from {
     top: 1rem;

@@ -1,0 +1,24 @@
+@use "variables" as *;
+
+@mixin responsive {
+  @media screen and (max-width: $responsive-breakpoint) {
+    @content;
+  }
+}
+
+@mixin column-display {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin wrap-display {
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+@mixin contact-flex-display {
+  display: flex;
+  flex-direction: column;
+  @include wrap-display();
+}

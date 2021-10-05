@@ -512,10 +512,24 @@ template {
   display: flex;
   flex-direction: column;
 }
+@media screen and (max-width: 1000px) {
+  .destination {
+    height: 100%;
+    padding-bottom: 5%;
+  }
+}
 .destination-cards {
   display: flex;
   flex-direction: row;
   padding-left: 14rem;
+}
+@media screen and (max-width: 1000px) {
+  .destination-cards {
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    padding-left: 0;
+  }
 }
 .destination__heading {
   font-size: 2.8rem;
@@ -532,10 +546,24 @@ template {
   margin-right: 1.5rem;
   border-radius: 0.3125rem;
 }
+@media screen and (max-width: 1000px) {
+  .destination__card {
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: 5% auto;
+  }
+}
 .destination__card-heading {
   font-size: 1.2rem;
   padding: 0 4rem;
   border-bottom: 0.0625rem solid black;
+}
+@media screen and (max-width: 1000px) {
+  .destination__card-heading {
+    padding-left: 0;
+    margin: auto;
+  }
 }
 .destination__card-text-box {
   width: 13rem;
@@ -559,27 +587,4 @@ template {
 
 .primary-nav-right__anchor-current {
   border-bottom: 0.22rem solid #db7a4e;
-}
-
-@media only screen and (max-width: 1000px) {
-  .destination {
-    height: 100%;
-    padding-bottom: 5%;
-  }
-  .destination-cards {
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-    padding-left: 0;
-  }
-  .destination__heading {
-    padding-left: 0;
-    margin: auto;
-  }
-  .destination__card {
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-    margin: 5% auto;
-  }
 }/*# sourceMappingURL=destination.css.map */

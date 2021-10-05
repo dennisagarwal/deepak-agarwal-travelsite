@@ -510,6 +510,13 @@ template {
   padding-top: 5%;
   padding-bottom: 5%;
 }
+@media screen and (max-width: 1000px) {
+  .hero {
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+}
 .hero-left {
   margin: 0;
   width: 36rem;
@@ -518,6 +525,15 @@ template {
   display: flex;
   flex-direction: column;
   color: #335576;
+}
+@media screen and (max-width: 1000px) {
+  .hero-left {
+    margin: 0 auto;
+    padding-left: 0;
+    width: 20rem;
+    height: 26rem;
+    display: flex;
+  }
 }
 .hero-left__button {
   width: 3rem;
@@ -540,11 +556,24 @@ template {
   width: 30rem;
   height: 25rem;
 }
+@media screen and (max-width: 1000px) {
+  .hero-right__img {
+    padding-right: 0;
+    height: 26rem;
+  }
+}
 
 .recommendations {
   margin-top: 5%;
   margin-bottom: 8%;
   padding-left: 6rem;
+}
+@media screen and (max-width: 1000px) {
+  .recommendations {
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
 }
 .recommendations__heading {
   font-size: 0.95rem;
@@ -555,6 +584,13 @@ template {
   display: flex;
   justify-content: center;
   margin: 0;
+}
+@media screen and (max-width: 1000px) {
+  .recommendations__cards {
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
 }
 .recommendations__cards-text {
   position: absolute;
@@ -571,6 +607,11 @@ template {
   margin-right: 2.625rem;
   box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2);
 }
+@media screen and (max-width: 1000px) {
+  .recommendations__cards-img {
+    margin-bottom: 5%;
+  }
+}
 .recommendations__cards-img-text {
   position: relative;
 }
@@ -580,41 +621,4 @@ template {
 
 .primary-nav-right__anchor-current {
   border-bottom: 0.22rem solid #db7a4e;
-}
-
-@media only screen and (max-width: 1000px) {
-  .hero {
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-  }
-  .hero-left {
-    margin: 0 auto;
-    padding-left: 0;
-    width: 20rem;
-    height: 26rem;
-    display: flex;
-  }
-  .hero-left__button {
-    margin-top: 1.3125rem;
-  }
-  .hero-right__img {
-    padding-right: 0;
-    height: 26rem;
-  }
-
-  .recommendations {
-    padding-left: 0;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-  }
-  .recommendations__cards {
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-  }
-  .recommendations__cards-img {
-    margin-bottom: 5%;
-  }
 }/*# sourceMappingURL=main.css.map */
